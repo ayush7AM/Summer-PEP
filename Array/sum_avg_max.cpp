@@ -9,4 +9,12 @@ int main(){
     double avg = sum/n;
     int maxi = *max_element(v.begin(),v.end());
     cout<<"Total sum: "<<sum<<" Average: "<<avg<<" Maximum: "<<maxi;
+    int second_max =0;
+    for(int i=0;i<n;i++){
+        if(v[i]>second_max && v[i]<maxi){
+            second_max = v[i];
+        }
+    }
+    
+    cout<<"Second Max: "<<second_max;
 }
