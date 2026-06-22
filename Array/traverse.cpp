@@ -6,4 +6,13 @@ int main(){
     for(auto it: arr){
         cout<<it<<" ";
     }
+    int x;
+    cin>>x;
+    int pep[x];
+    for(int i =0;i<x;i++){
+        cin>>pep[i];
+    }
+    for(auto it:pep){
+        cout<<it<<" ";
+    }
 }
