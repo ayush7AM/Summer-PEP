@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//traverse an array
 int main(){
     int arr[] = {1,2,3,4,5};
     for(auto it: arr){
