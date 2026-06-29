@@ -5,17 +5,21 @@ using namespace std;
 
 
 int gcd(int a,int b){
-    while(b!=0){
-        int temp = b;
-        b = a%b;
-        a = temp;
-    }
-    return a;
+    if(a==0) return b;
+    return(gcd(b%a,a)); //Euclid's Algo
 }
 
 int lcm(int a,int b){
     return ((a*b)/gcd(a,b));
 }
+
+
+/*Euclid's Algorithm 
+gcd(a,b) = gcd(b%a,a)
+if (a == 0)
+        return b;
+    return findGCD(b % a, a);
+*/
 
 int main(){
     cout<<"GDC :"<<gcd(12,44)<<endl;
