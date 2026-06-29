@@ -18,3 +18,16 @@ public:
         return nums;
     }
 };
+
+int main(){
+   vector<int>arr={1,2,3,4,5};
+   vector<int>arr2;
+   int sum =0;
+   for(int i=arr.size()-1;i>=0;i--){
+    sum+=arr[i];
+    arr2.push_back(sum);
+   }
+   for(int i =arr2.size()-1;i>=0;i--){
+    cout<<arr2[i]<<" ";
+   }
+}
